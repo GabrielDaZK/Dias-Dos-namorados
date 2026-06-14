@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz Dia dos Namorados, Meu Amor! ❤️</title>
+    <style>
+        
+        
+         
+
+        
+        /* Configurações Gerais */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #ffe3e3 0%, #fbc2eb 100%);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 40px 20px;
+            color: #4a4a4a;
+            overflow-x: hidden;
+            position: relative;
+        }
+
+        /* Efeito de corações ao fundo */
+        body::before {
+            content: "❤️";
+            position: fixed;
+            top: 10%;
+            left: 5%;
+            font-size: 24px;
+            opacity: 0.3;
+            animation: flutuar 6s ease-in-out infinite;
+        }
+
+        body::after {
+            content: "💖";
+            position: fixed;
+            bottom: 15%;
+            right: 5%;
+            font-size: 30px;
+            opacity: 0.3;
+            animation: flutuar 8s ease-in-out infinite reverse;
+        }
+
+        @keyframes flutuar {
+            0%, 100% { transform: translateY(0) scale(1); }
+            50% { transform: translateY(-20px) scale(1.1); }
+        }
+
+        /* Cabeçalho */
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: #d63031;
+            margin-bottom: 10px;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+        }
+
+        p.subtitulo {
+            font-size: 1.1rem;
+            color: #636e72;
+            font-style: italic;
+        }
+
+        /* Container da Galeria */
+        .galeria-container {
+            max-width: 1000px;
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            padding: 10px;
+        }
+
+        /* Cartão de Foto */
+        .foto-card {
+            background: white;
+            padding: 15px;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        .foto-card:hover {
+            transform: translateY(-10px) rotate(2deg);
+            box-shadow: 0 15px 30px rgba(214, 48, 49, 0.2);
+        }
+
+        .foto-wrapper {
+            width: 100%;
+            height: 300px;
+            overflow: hidden;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        .foto-wrapper img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Faz a foto preencher o espaço sem distorcer */
+            transition: transform 0.5s ease;
+        }
+
+        .foto-card:hover .foto-wrapper img {
+            transform: scale(1.08);
+        }
+
+        /* Legenda da Foto */
+        .legenda {
+            text-align: center;
+            font-size: 1rem;
+            font-weight: 500;
+            color: #2d3436;
+        }
+
+        /* Rodapé / Mensagem Final */
+        footer {
+            margin-top: 50px;
+            text-align: center;
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #d63031;
+            animation: piscar 2s infinite;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes piscar {
+            0%, 100% { opacity: 0.8; }
+            50% { opacity: 1; transform: scale(1.05); }
+        }
+        
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Feliz Dia dos Namorados meu amor ❤️</h1>
+        <p class="subtitulo">Alguns dos meus momentos favoritos ao seu lado...</p>
+    </header>
+
+    <main class="galeria-container">
+        
+        <div class="foto-card">
+            <div class="foto-wrapper">
+                <img src="fotos/primeira foto.jpeg" alt="Nossa foto">
+            </div>
+            <div class="legenda">Onde tudo começou... 🥰</div>
+        </div>
+
+        <div class="foto-card">
+            <div class="foto-wrapper">
+                <img src="fotos/dente.jpeg" alt="Nossa foto">
+            </div>
+            <div class="legenda">Seu sorriso mais lindo! ☀️</div>
+        </div>
+
+        <div class="foto-card">
+            <div class="foto-wrapper">
+                <img src="fotos/solo.jpeg" alt="Nossa foto">
+            </div>
+            <div class="legenda">Amo cada detalhe seu. 💖</div>
+        </div>
+
+        <div class="foto-card">
+            <div class="foto-wrapper">
+                <img src="fotos/A mais linda.jpeg" alt="Nossa foto">
+            </div>
+            <div class="legenda">A melhor companhia do mundo. 🌍</div>
+        </div>
+
+        <div class="foto-card">
+            <div class="foto-wrapper">
+                <img src="fotos/flor.jpeg" alt="Nossa foto">
+            </div>
+            <div class="legenda">Mais um dia inesquecível. 📸</div>
+        </div>
+
+        <div class="foto-card">
+            <div class="foto-wrapper">
+                <img src="fotos/ponto.jpeg" alt="Nossa foto">
+            </div>
+            <div class="legenda"> Eu te amo daqui até o infinito! 🚀</div>
+        </div>
+
+    </main>
+
+    <footer>
+    Eu te amo hoje, amanhã e para sempre! 🌹
+    
+    </footer>
+
+   
+</body>
+</html>
